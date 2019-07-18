@@ -1,0 +1,75 @@
+<!-- Hangman game
+1. make a bootstrap frame work of the game 
+    a. header, link bootstrap and link all assets
+    b. top half logo and design, botom half game play
+    c. include instructions 
+2. add the JS so it will work 
+    a. make arrays of computer options 
+    b. recognize the keys right/wrong
+    c. include counter
+3. add the css so it looks good
+    a. style top half old west logo
+    b. add sound effects-->
+
+<!DOCTYPE html> 
+<meta charset="UTF-8">
+<title>Hangman Game</title> 
+
+<head>
+ <!-- bootstrap link and other style and image folder links -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--  style for the top half and the instructions
+    ** add background picture of old west and add font style-->
+    <div class="container"> 
+     <div class="jumbotron">
+              <h1 class="display-4">Hang 'Em High Hangman</h1>
+              <p class="lead">Guess the word or there will be a hanging!</p>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="container"> 
+         <div class="jumbotron">
+               
+            <div>
+                  <h3> Word to guess: </h3> 
+                  <span id="wordToGuess"> ------   </span> 
+                  
+            </div> 
+
+             <div>
+                 <h3> Letters guessed: </h3>
+                 <span id="lettersGuessed"> </span>
+             </div>
+
+             <div> 
+                    <h3> Guesses left: </h3>
+                    <span id="guessesLeft"> </span>
+
+             </div>
+
+             <div> 
+                    <h3> Wins: </h3>
+                    <span id="wins"> </span>
+
+             </div>
+
+             <div> 
+                    <h3> Losses: </h3>
+                    <span id="losses"> </span>
+
+             </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
